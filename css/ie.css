@@ -1,0 +1,43 @@
+
+/*header*/
+
+div#strap_container {
+	position: relative;
+	}
+
+/*fancy pants lettering*/
+
+.col .title-05 {
+	background: url(../img/sprite_ie.png) no-repeat -310px 0;
+	}
+	
+/*form*/
+
+#contact #button {
+	width: 62px;
+	height: 62px;
+	
+	background: url(../img/sprite_ie.png) no-repeat -240px 0;
+	}
+	
+#contact fieldset.last strong {
+		display: none;
+		}
+
+/*footer*/
+
+#social a#skype {
+	background: url(../img/sprite_ie.png) no-repeat 0 0;
+	}	
+	
+#social a#google {
+	background: url(../img/sprite_ie.png) no-repeat -60px 0;
+	}	
+	
+#social a#twitter {
+	background: url(../img/sprite_ie.png) no-repeat -120px 0;
+	}	
+	
+#social a#facebook {
+	background: url(../img/sprite_ie.png) no-repeat -180px 0;
+	}	
