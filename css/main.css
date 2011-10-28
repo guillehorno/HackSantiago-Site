@@ -33,7 +33,7 @@ header {
 	
 #content {
 	background: url(../img/sprite.png) no-repeat center -350px;
-	padding: 60px 0;
+	padding: 60px 0 25px;
 	}	
 	
 #action {
@@ -181,7 +181,7 @@ p.destacado{
 	letter-spacing: 0.05em;
 	text-decoration: none;
 	display: inline;
-	padding: 40px 0px 80px 0;
+	padding: 30px 0px 40px 0;
 	text-align: center;
 	position: relative;
 	width: 100%;
@@ -189,7 +189,48 @@ p.destacado{
 	text-shadow: 3px 3px 0px #656565;
 }
 
+p.fecha{
+	font-family: BebasNeueRegular;
+	font-size: 3.375em;
+	color: #FDF8E5;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+	display: inline;
+	padding: 30px 0px 0px 0;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	float: left;
+	text-shadow: 3px 3px 0px #656565;
+}
+
+
 /*columns*/
+
+.full-col {
+	width: 900px; 				
+	padding: 10px 20px;
+	float: left;
+	background: #ffffff;
+	}
+
+.full-col p{
+	font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+	font-size: 0.9em;
+	color: black;
+	line-height: 1.4em;
+	padding: 5px 0 15px 0;
+}
+
+.full-col h3 {
+	font-family: RokkittRegular;
+	font-size: 2.15em; 			/*  36/16 */ 
+	color: #000;
+	letter-spacing: 0.25em; 	/*  9/36 */
+	padding: 5px 0 ;
+	text-transform: uppercase;
+}
+	
 		
 .col {
 	width: 280px; 				
