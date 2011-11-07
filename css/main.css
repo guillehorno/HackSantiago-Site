@@ -164,6 +164,10 @@ div#menu-bar ul li a{
 	color: #ffffff;
 }
 
+div#menu-bar ul li.selected a {
+	color: #999999;
+}
+
 div#menu-bar ul li a.apply{
 	color: orange;
 }
@@ -209,7 +213,7 @@ p.fecha{
 
 .full-col {
 	width: 900px; 				
-	padding: 10px 20px;
+	padding: 10px 20px 20px 20px;
 	float: left;
 	background: #ffffff;
 	}
@@ -219,15 +223,41 @@ p.fecha{
 	font-size: 0.9em;
 	color: black;
 	line-height: 1.4em;
-	padding: 5px 0 15px 0;
+	padding: 5px 0 10px 0;
+}
+
+.full-col strong{
+	font-weight: bold;
+	padding-rignh: 15px;
+}
+
+.full-col ul{
+	padding: 5px 0 10px 10px;
+}
+
+.full-col li{
+	font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+	font-size: 1.1em;
+	color: black;
+	line-height: 1.4em;
+	padding: 5px 0 10px 0;
+}
+
+.full-col h1 {
+	font-family: BebasNeueRegular;
+	font-size: 3.50em; 			/*  36/16 */ 
+	color: #999999;
+	letter-spacing: 0.15em; 	/*  9/36 */
+	padding: 10px 0 10px 0 ;
+	text-transform: uppercase;
 }
 
 .full-col h3 {
-	font-family: RokkittRegular;
-	font-size: 2.15em; 			/*  36/16 */ 
-	color: #000;
-	letter-spacing: 0.25em; 	/*  9/36 */
-	padding: 5px 0 ;
+	font-family: BebasNeueRegular;
+	font-size: 1.85em; 			/*  36/16 */ 
+	color: #444444;
+	letter-spacing: 0.15em; 	/*  9/36 */
+	padding: 20px 0 5px 0 ;
 	text-transform: uppercase;
 }
 	
