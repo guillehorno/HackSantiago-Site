@@ -34,7 +34,19 @@
 	
   	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   	<script src="/js/modernizr-2.0.6.min.js"></script>
+	<script type="text/javascript">
 
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26878055-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </head>
 
 <body id="index" class="home">
@@ -50,8 +62,8 @@
 					<li class="selected"><a href="/" title="Inicio">Inicio</a></li>
 					<li><a href="reglas.html" title="Reglas">Reglas</a></li>
 					<li><a href="programa.html" title="Programa">Programa</a></li>
-					<li><a href="/blog/" title="Blog">Blog</a></li>
-					<li><a class="apply" href="http://eventioz.com/events/hacksantiago" title="Inscríbete" target="blank">Inscríbete</a></li>
+					<li><a href="/blog/" title="Blog" target="_blank">Blog</a></li>
+					<li><a class="apply" href="https://eventioz.com/events/hacksantiago/registrations/new" title="Inscríbete" target="blank">Inscríbete</a></li>
 				</ul>
 			</div><!-- /menu -->
 	
@@ -173,7 +185,7 @@
 					<a href="http://www.jobconvo.com"><img height="48" src="/img/logo-jobconvo.png" border=0 alt="JobConvo"></a>	
 					Picket				
 				</p>
-				<p class="sendemail">Quieres ayudar a organizar? <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
+				<p class="sendemail">¿Quieres ayudar a organizar? <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
 				
 			</div><!--end credits-->
 			
@@ -182,24 +194,25 @@
 			<div id="media-partners">
 				<h3>Media Partners</h3>
 				<p>
-					<a href="http://www.startupchile.org"><img height="48" src="/img/logo-sup.png" border=0 alt="Startup Chile"></a>
-					<a href="http://www.corfo.cl"><img height="48" src="/img/logo-innova.png" border=0 alt="Corfo Innova"></a>
-					<a href="http://www.welcu.com"><img height="48" src="/img/logo-welcu.png" border=0 alt="Welcu"></a>	
+					<a href="http://www.startupchile.org" target="_blank"><img height="48" src="/img/logo-sup.png" border=0 alt="Startup Chile"></a>
+					<a href="http://www.corfo.cl" target="_blank"><img height="48" src="/img/logo-innova.png" border=0 alt="Corfo Innova"></a>
+					<a href="http://www.meetup.com/huevapi/" target="_blank"><img height="48" src="/img/huevapi_letras2.png" border=0 alt="Huevapi"></a>
+					<!-- <a href="http://www.welcu.com"><img height="48" src="/img/logo-welcu.png" border=0 alt="Welcu"></a>	-->
 				</p>
-				<p class="sendemail">Quieres ayudar a divulgar? <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
+				<p class="sendemail">¿Quieres ayudar a divulgar? <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
 				
 			</div><!--end credits-->
 			
 			<div class="clear"></div>
 		
 			<div id="sponsors">
-				<h3>Auspiciadores</h3>
+				<h3>Auspiciantes</h3>
 				<p>
 					<a href="http://www.co-work.cl"><img height="55" src="/img/logo-cowork.png" border=0 alt="Co-Work Chile"></a>
 					<a href="http://www.redbull.cl/"><img height="48" src="/img/logo-redbull.png" border=0 alt="RedBull Chile"></a>
 				</p>
 				
-				<p class="sendemail">Quieres auspiciar y contribuir para inovacion en Chile?  <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
+				<p class="sendemail">¿Quieres auspiciar y contribuir para innovación en Chile?  <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
 				
 			</div><!--end credits-->
 			
@@ -207,11 +220,9 @@
 			
 			<div id="social">
 	
-				<a href="#" id="google">google plus</a>
+				<a href="http://twitter.com/hacksantiago" target="_blank" id="twitter">twitter</a>
 			
-				<a href="#" id="twitter">twitter</a>
-			
-				<a href="#" id="facebook">facebook</a>
+				<a href="https://www.facebook.com/HackSantiago" target="_blank" id="facebook">facebook</a>
 				
 				<a href="#" id="raptor">velocirraptor</a>
 			
@@ -239,18 +250,6 @@
 	<script src="/js/jquery.validate.js"></script>
 	<script>
 	$(function(){
-		$('#contact').validate({
-			submitHandler: function(form) {
-			    $(form).ajaxSubmit({
-				    url: 'mail.php',
-				    success: function() {
-				    	$('#contact').hide();
-				    	$('#action .wrapper').append("<h4  class='form_thanks'>Thanks! I'll see you there!</h4>")
-				    }
-			    });
-		    }
-		}); 
-		
 		//raptorize inicializacion
 		
 		$('#raptor').raptorize();

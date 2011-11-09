@@ -34,7 +34,19 @@
 	
   	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   	<script src="/js/modernizr-2.0.6.min.js"></script>
+	<script type="text/javascript">
 
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-26878055-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </head>
 
 <body id="index" class="home">
@@ -50,8 +62,8 @@
 					<li><a href="/" title="Inicio">Inicio</a></li>
 					<li class="selected"><a href="reglas.html" title="Reglas">Reglas</a></li>
 					<li><a href="programa.html" title="Programa">Programa</a></li>
-					<li><a href="/blog/" title="Blog">Blog</a></li>
-					<li><a class="apply" href="http://eventioz.com/events/hacksantiago" title="Inscríbete" target="blank">Inscríbete</a></li>
+					<li><a href="/blog/" title="Blog" target="_blank">Blog</a></li>
+					<li><a class="apply" href="https://eventioz.com/events/hacksantiago/registrations/new" title="Inscríbete" target="blank">Inscríbete</a></li>
 				</ul>
 			</div><!-- /menu -->
 	
@@ -66,7 +78,7 @@
 		<div class="full-col drop-shadow lifted">
 			<h1>Reglas</h1>
 			<h3>¿Qué es HackSantiago?</h3>
-			<p>HackSantiago es una reunión informal de personas intelectualmente curiosas, apasionadas por la tecnología en el que construímos cosas por la simple satisfacción de hacerlo. Promovemos una cultura de apertura y manos a la obra.</p>
+			<p>HackSantiago es una reunión informal de personas intelectualmente curiosas, apasionadas por la tecnología en la que construimos cosas por la simple satisfacción de hacerlo. Promovemos una cultura de apertura y manos a la obra.</p>
 
 			<p>La mayoría de los asistentes son desarrolladores de software y diseñadores, pero si tu haces algo diferente, eres bienvenido.</p>
 
@@ -76,15 +88,15 @@
 
 			<h3>Programa típico</h3>
 
-			<p>La respuesta corta es: Programar (o trabajar en lo que quieras) de inicio a fin. La respuesta larga es: En algunos momentos hay tiempo para exponer 30 segundos o 5 minutos. Adicionalmente, durante el evento algunas personas se reunen para hacer alguna dinámica de colaboración en particular. Así mismo, puedes esperar que la hora de la comida sea un momento para socializar.</p>
+			<p>La respuesta corta es: Programar (o trabajar en lo que quieras) de inicio a fin. La respuesta larga es: En algunos momentos hay tiempo para exponer 30 segundos o 5 minutos. Adicionalmente, durante el evento algunas personas se reúnen para hacer alguna dinámica de colaboración en particular. Así mismo, puedes esperar que la hora de la comida sea un momento para socializar.</p>
 
-			<h3>Competición general</h3>
+			<h3>Competencia general</h3>
 
-			<p>Lo va existir una competición general para lo mejor aplicativo, lo que tienga mas utilidade y bien echo. Para participar en el competicion deveran eligir un de los aplicativos segeridos a el Hackathon e constituir en el local una equipa de 4 a 5 elementos. Lo existira un Juri externo para eligir lo aplicativo ganador.</p>
+			<p>Va a existir una competencia general para la mejor aplicación, lo que tenga mas utilidades y esté mejor hecha. Para participar en la competencia se deberá elegir una de las aplicaciones sugeridas en el Hackathon y desarrollarla localmente con un equipo de no más de 4 o 5 personas. Existirá un jurado externo que elegirá el equipo ganador</p>
 
-			<h3>Otras competiciónes</h3>
+			<h3>Otras competencias</h3>
 
-			<p>Lo van a existir otras competiciones especiales para quien elija un aplicativo sugerido por diferentes auspiciadores. Como exemplo, existira un premio especial para aplicativos de temativa Salud Online o utilizando la API de loveblip.</p>
+			<p>Van a existir otras competencias especiales para quien elija una aplicación sugerida por diferentes auspiciantes. Por ejemplo, existirá un premio especial para aplicaciones de la temática Salud Online o utilizando la API de loveblip.</p>
 
 			<h3>¿Qué debo llevar?</h3>
 
@@ -148,7 +160,7 @@
 					<a href="http://www.jobconvo.com"><img height="48" src="/img/logo-jobconvo.png" border=0 alt="JobConvo"></a>	
 					Picket				
 				</p>
-				<p class="sendemail">Quieres ayudar a organizar? <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
+				<p class="sendemail">¿Quieres ayudar a organizar? <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
 				
 			</div><!--end credits-->
 			
@@ -157,24 +169,25 @@
 			<div id="media-partners">
 				<h3>Media Partners</h3>
 				<p>
-					<a href="http://www.startupchile.org"><img height="48" src="/img/logo-sup.png" border=0 alt="Startup Chile"></a>
-					<a href="http://www.corfo.cl"><img height="48" src="/img/logo-innova.png" border=0 alt="Corfo Innova"></a>
-					<a href="http://www.welcu.com"><img height="48" src="/img/logo-welcu.png" border=0 alt="Welcu"></a>	
+					<a href="http://www.startupchile.org" target="_blank"><img height="48" src="/img/logo-sup.png" border=0 alt="Startup Chile"></a>
+					<a href="http://www.corfo.cl" target="_blank"><img height="48" src="/img/logo-innova.png" border=0 alt="Corfo Innova"></a>
+					<a href="http://www.meetup.com/huevapi/" target="_blank"><img height="48" src="/img/huevapi_letras2.png" border=0 alt="Huevapi"></a>
+					<!-- <a href="http://www.welcu.com"><img height="48" src="/img/logo-welcu.png" border=0 alt="Welcu"></a>	-->
 				</p>
-				<p class="sendemail">Quieres ayudar a divulgar? <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
+				<p class="sendemail">¿Quieres ayudar a divulgar? <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
 				
 			</div><!--end credits-->
 			
 			<div class="clear"></div>
 		
 			<div id="sponsors">
-				<h3>Auspiciadores</h3>
+				<h3>Auspiciantes</h3>
 				<p>
 					<a href="http://www.co-work.cl"><img height="55" src="/img/logo-cowork.png" border=0 alt="Co-Work Chile"></a>
 					<a href="http://www.redbull.cl/"><img height="48" src="/img/logo-redbull.png" border=0 alt="RedBull Chile"></a>
 				</p>
 				
-				<p class="sendemail">Quieres auspiciar y contribuir para inovacion en Chile?  <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
+				<p class="sendemail">¿Quieres auspiciar y contribuir para innovación en Chile?  <a href="mailto:hello@hacksantiago.com">Envianos un email!</a></p>
 				
 			</div><!--end credits-->
 			
@@ -182,11 +195,9 @@
 			
 			<div id="social">
 	
-				<a href="#" id="google">google plus</a>
+				<a href="http://twitter.com/hacksantiago" target="_blank" id="twitter">twitter</a>
 			
-				<a href="#" id="twitter">twitter</a>
-			
-				<a href="#" id="facebook">facebook</a>
+				<a href="https://www.facebook.com/HackSantiago" target="_blank" id="facebook">facebook</a>
 				
 				<a href="#" id="raptor">velocirraptor</a>
 			
@@ -214,18 +225,6 @@
 	<script src="/js/jquery.validate.js"></script>
 	<script>
 	$(function(){
-		$('#contact').validate({
-			submitHandler: function(form) {
-			    $(form).ajaxSubmit({
-				    url: 'mail.php',
-				    success: function() {
-				    	$('#contact').hide();
-				    	$('#action .wrapper').append("<h4  class='form_thanks'>Thanks! I'll see you there!</h4>")
-				    }
-			    });
-		    }
-		}); 
-		
 		//raptorize inicializacion
 		
 		$('#raptor').raptorize();
